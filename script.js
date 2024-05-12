@@ -14,12 +14,10 @@ checkButton.addEventListener("click", () => {
         }
     }
 })
-
-// something wrong about whitespaces
-
+//regex should be fixed better
 const checkWord = () => {
     const regex = /[^\w\s]+/gi;
-    const text = inputText.value.replaceAll(regex, "").replaceAll("_", "");
-    const revText = text.split("").reverse().join("");
+    const text = inputText.value.replaceAll(regex, "").replaceAll("_", "").replaceAll(" ", "").toLowerCase();
+    const revText = text.split("").reverse().join("").replaceAll(" ", "");
     return text === revText ? true : false;
 }
