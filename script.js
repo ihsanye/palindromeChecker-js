@@ -14,10 +14,10 @@ checkButton.addEventListener("click", () => {
         }
     }
 })
-//regex should be fixed better
+
 const checkWord = () => {
-    const regex = /[^\w\s]+/gi;
-    const text = inputText.value.replaceAll(regex, "").replaceAll("_", "").replaceAll(" ", "").toLowerCase();
-    const revText = text.split("").reverse().join("").replaceAll(" ", "");
+    const regex = /[^\w]+|\s|_/gi;
+    const text = inputText.value.replaceAll(regex, "").toLowerCase();
+    const revText = text.split("").reverse().join("");
     return text === revText ? true : false;
 }
