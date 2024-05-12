@@ -15,6 +15,8 @@ checkButton.addEventListener("click", () => {
     }
 })
 
+// something wrong about whitespaces
+
 const checkWord = () => {
     const regex = /[^\w\s]+/gi;
     const text = inputText.value.replaceAll(regex, "").replaceAll("_", "");
