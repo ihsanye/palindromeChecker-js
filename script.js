@@ -6,12 +6,12 @@ checkButton.addEventListener("click", () => {
     const text = inputText.value;
     if (text === "") {
         alert("Please input a value");
-    } else {
-        if (checkWord()) {
-            result.textContent = `${text} is a palindrome`;
-        } else {
-            result.textContent = `${text} is not a palindrome`;
-        }
+    }
+    else if (checkWord()) {
+        result.textContent = `${text} is a palindrome`;
+    }
+    else {
+        result.textContent = `${text} is not a palindrome`;
     }
 })
 
