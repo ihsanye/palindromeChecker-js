@@ -5,17 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <title>Document</title>
+    <title>Palindrome Checker</title>
 </head>
 
 <body>
-    <h2>Is it a Palindrome?</h2>
-    <p>Enter in text to check for a palindrome:</p>
-    <input id="text-input" type="text" value="">
-    <button id="check-btn">Check</button>
-    <div id="result" value=""></div>
-    <p id="definition">A palindrome is a word or sentence that's spelled the same way both forward and backward,
-        ignoring punctuation, case, and spacing.</p>
+    <div class="container">
+        <h2>Is it a Palindrome?</h2>
+        <div id="process-part">
+            <p>Enter in text to check for a <i>palindrome</i>:</p>
+            <div id="checker-part">
+                <input id="text-input" type="text" value="">
+                <button id="check-btn">Check</button>
+            </div>
+            <div id="result" value=""></div>
+        </div>
+        <div class="" id="definition-part">
+            <p id="definition">A <i>palindrome</i> is a word or sentence that's spelled the same way both forward and
+                backward,
+                ignoring punctuation, case, and spacing.</p>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 

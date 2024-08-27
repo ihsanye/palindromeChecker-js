@@ -1,1 +1,89 @@
-/* https://palindrome-checker.freecodecamp.rocks/ */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a23;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: cornflowerblue;
+    font-size: 2.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#process-part {
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: min(100vw, 450px);
+    box-shadow: 0 8px 6px cornflowerblue;
+    margin-bottom: 20px;
+    color: black;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+#process-part p {
+    text-align: center;
+}
+
+#checker-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 20px 0;
+    width: 90%;
+    gap: 15px;
+}
+
+#checker-part input {
+    height: 20px;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid cornflowerblue;
+    border-radius: 2px;
+    text-align: center;
+}
+
+#checker-part button {
+    height: 35px;
+    border-radius: 15px;
+    width: 20%;
+    color: white;
+    border: 2px solid white;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    font-size: 0.85em;
+}
+
+#checker-part button:hover {
+    background-color: darkblue;
+}
+
+#definition-part {
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+    text-align: center;
+    height: 20vh;
+    width: min(100vw, 450px);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 6px 12px white;
+}

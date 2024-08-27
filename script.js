@@ -8,10 +8,10 @@ checkButton.addEventListener("click", () => {
         alert("Please input a value");
     }
     else if (checkWord()) {
-        result.textContent = `${text} is a palindrome`;
+        result.innerHTML = `<strong>${text}</strong> is a palindrome`;
     }
     else {
-        result.textContent = `${text} is not a palindrome`;
+        result.innerHTML = `<strong>${text}</strong> is not a palindrome`;
     }
 })
 
